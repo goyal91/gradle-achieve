@@ -51,11 +51,11 @@ ext.libraries =[
         "org.springframework:spring-test:$springframeworkVersion",
         "mysql:mysql-connector-java:$mysqlConnectorJavaVersion"
     ],
-    log: [
+    /*log: [
     	"log4j:log4j:$log4jVersion",
     	"org.slf4j:slf4j-api:$slf4jVersion",
     	"org.slf4j:slf4j-log4j12:$slf4jVersion"
-    ],
+    ],*/
     stdlib: [
     	"taglibs:standard:$standardVersion",
     	"javax.servlet.jsp.jstl:jstl:$jstlVersion"
@@ -148,7 +148,7 @@ ext.libraries =[
 dependencies {
 	testCompile libraries.test
 	providedCompile libraries.servlet
-	compile libraries.log
+	//compile libraries.log
 	compile libraries.stdlib
 	compile libraries.common
 	compile libraries.json
